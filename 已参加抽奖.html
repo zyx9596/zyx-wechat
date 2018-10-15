@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>已参加抽奖</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style:none;
+        }
+       #box{
+            width: 640px;
+            height: 1008px;
+            margin: 0 auto;
+            position: relative;
+            background: url(./image/bg01.jpg) 0 0 no-repeat;   
+        }
+       ul{
+           display: block;
+       } 
+       ul li:nth-child(1){
+        height: 270px;
+        width: 640px;
+        background: url(./image/bg02.jpg) 0 0 no-repeat;
+      }
+      ul li:nth-child(2){
+        width: 640px;
+        height: 70px;
+        text-align: center;
+        font-size: 40px;
+        line-height: 70px;
+        color:rgb(4,56,153);
+        font-family: "微软雅黑";
+        font-weight: bold;
+      }
+      ul li:nth-child(3){
+        width:600px;
+        display: block;
+        color:rgb(101,101,101);
+        margin: 0 auto;
+        /* background: red; */
+        font-size: 26px;
+        text-indent:40px;
+        font-weight: bold;
+        letter-spacing: 2px;
+      }
+    </style>
+</head>
+<body>
+   <div id="box">
+       <ul>
+           <li></li>
+           <li>很抱歉</li>
+           <li>
+               <pre>亲，每个微信号只可参加一次幸运大抽</pre><pre>奖，感谢您一直以来对启辰的支持，祝您</pre><pre>观展愉快！</pre>
+           </li>
+       </ul>
+   </div>
+</body>
+<script>
+    function resetPage(){
+            // 获取设备的宽度
+            var deviceWidth = document.documentElement.clientWidth;
+            // 设备的宽度/设计图的宽度
+            var scale = deviceWidth/640;
+            // 对body进行缩放
+            document.body.style.zoom = scale;
+    }
+    resetPage();
+    window.onresize = function(){
+        resetPage();
+    }
+</script>
+</html>

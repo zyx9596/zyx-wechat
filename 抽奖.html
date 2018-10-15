@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+	<link rel="stylesheet" href="./抽奖.css">
+	<script src="jquery-1.8.3.min.js"></script>
+</head>
+<body>
+	 <div class="box">
+	 	 <div class="hz1">
+	 	 	 <img src="image/bg02.jpg" alt="">
+	 	 </div>
+	 	 <div class="zi1"><b>幸福“触”手可及</b></div>
+	 	 <div class="zi2">轻触任一款启辰车型牌即可参与抽奖</div>
+	 	 <ul id="list">
+	 	 	  <li>
+	 	 	  	 <a><img src="image/qc_01.png" alt=""></a>
+	 	 	  </li>
+	 	 	  <li>
+	 	 	  	 <a><img src="image/qc_02.png" alt=""></a>
+	 	 	  </li>
+	 	 	  <li>
+	 	 	  	 <a><img src="image/qc_03.png" alt=""></a>
+	 	 	  </li>
+	 	 	  <li>
+	 	 	  	 <a><img src="image/qc_04.png" alt=""></a>
+	 	 	  </li>
+	 	 	  <li>
+	 	 	  	 <a><img src="image/qc_05.png" alt=""></a>
+	 	 	  </li>
+	 	 	  <li>
+	 	 	  	 <a><img src="image/qc_06.png" alt=""></a>
+	 	 	  </li>
+	 	 </ul>
+
+	 </div>
+	 <script>
+          function resetPage(){
+       	  var sheW = document.documentElement.clientWidth;
+       	  var scale = sheW/640;
+       	  document.body.style.zoom = scale;
+       }
+       resetPage();
+       window.onresize = function(){
+       	     resetPage();
+       }
+
+       var list = document.getElementById('list');
+       var li = list.children;
+       var arr = ['场内中奖','未中奖']; 
+       for(var i=0;i<li.length;i++){
+       li[i].onclick = function(){
+       	   var x = Math.floor(Math.random()*3);
+       	   window.location.href = arr[x]+'.html';
+       }
+	//    for(var i = 0;i<li.length;i++){
+	// 	   li[i].onmouseover = function(){
+	// 		this.style.transform = 'rotateY(180deg)'; 
+	// 	   }
+	//    }
+   }
+	 </script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>活动规则</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            /* list-style: none; */
+        }
+        #box{
+            margin: 0 auto;
+            width: 640px;
+            height: 1008px;
+            background: url(./image/bg01.jpg) 0 0 no-repeat;
+            position: relative;
+        }
+        #box #inner{
+            float: left;
+            width: 595px;
+            height: 600px;
+            margin-left: 20px;
+            border:5px solid rgb(1, 40, 111);
+            border-radius: 20px;
+            /* background: rgb(168, 98, 98); */
+            background: white;
+            margin-top: 60px;
+        }
+        #inner h2{
+            color: rgb(4,56,153);
+            margin-top: 30px;
+            margin-left: 30px;
+        }
+        #inner ol{
+            display: block;
+            margin-left: 58px;
+        }
+        #inner ol li{
+            color:rgb(101,101,101);
+            font-size: 24px;
+            font-family: '微软雅黑';
+            font-weight: bold;
+            word-spacing: 2px;
+            margin-top: 5px;
+        }
+        #inner ol div{
+            width:433px;
+            height: 97px;
+            margin-top: 15px;
+            margin-left: 20px;
+            background: url(./image/btn01.png) 0 0 no-repeat;
+            /* background: red; */
+            font-size: 40px;
+            color:white;
+            text-align: center;
+            line-height:97px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div id="inner">
+            <h2>活动规则：</h2>
+            <ol>
+                <li>
+                    <pre>广州车展期间：关注启辰官方微信，参与"码</pre><pre>上有礼，辰心放送"活动并留下本人姓名及手</pre>
+                    <pre>机号码，即可参与。</pre>
+                </li>
+                <li>
+                    <pre>11月21至11月29日，每天抽取一台启辰R30</pre><pre>一年使用权大奖（现场兑奖）。11月29日抽取</pre><pre>终极大奖：一台启辰晨风一年使用权。</pre>
+                </li>
+                <li>
+                    <pre>每天16:00对当天所有参与者进行抽选，抽</pre><pre>中的参与者若不在现场，将取消中奖者资格并</pre><pre>继续抽奖（启辰晨风一年使用权除外）。</pre>
+                </li>
+                <li>
+                    <pre>终极大奖从车站期间所有参与者中抽取，后续</pre><pre>联系进行兑奖。</pre>
+                </li>
+                <li>
+                   <pre>此活动每人仅限参与一次；</pre> 
+                </li>
+                <li>
+                    <pre>本活动最终解释权归东风日产启辰所有。</pre>
+                </li>
+                <div>知道了</div>
+            </ol>
+        </div>
+    </div>
+</body>
+<script>
+     function resetPage(){
+            // 获取设备的宽度
+            var deviceWidth = document.documentElement.clientWidth;
+            // 设备的宽度/设计图的宽度
+            var scale = deviceWidth/640;
+            // 对body进行缩放
+            document.body.style.zoom = scale;
+    }
+    resetPage();
+    window.onresize = function(){
+        resetPage();
+    }
+</script>
+</html>

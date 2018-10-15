@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>场内中奖</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        ul{
+            width: 640px;
+            height: 1008px;
+            margin: 0 auto;
+            background: url(./image/bg01.jpg) 0 0 no-repeat;
+            position: relative;
+        }
+        ul li:nth-child(1){
+            display: inline-block;
+            width: 640px;
+            height: 60px;
+            font-size: 34px;
+            font-family: "微软雅黑";
+            text-align: center;
+            line-height: 60px;
+            letter-spacing: 2px;
+        }
+        ul li:nth-child(2){
+            width: 614px;
+            height: 430px;
+            margin-top: 12px;
+            margin-left: 12px;
+            background: white;
+        }
+        ul li:nth-child(2) #spa2{
+            display: inline-block;
+            width: 614px;
+            font-size: 24px;
+            text-align: center;
+            color:rgb(101,101,101);
+            letter-spacing: 2px;
+        }
+        ul li:nth-child(2) #spa3{
+            display: inline-block;
+            width: 418px;
+            height: 75px;
+            margin-top: 10px;
+            margin-left: 80px;
+            background: url(./image/bg03.jpg) 0 0 no-repeat;
+            font-size: 34px;
+            font-family: "微软雅黑";
+            color:white;
+            font-weight: bold;
+            letter-spacing: 60px;
+            text-indent: 36px;
+            line-height: 75px;
+        }
+        ul li:nth-child(2) #spa4{
+            display: block;
+            width: 614px;
+            height: 294px;
+            background: url(./image/qc_07.jpg) 50px 20px no-repeat;
+        }
+        ul li:nth-child(3) h2{
+            color:rgb(4,56,153);
+            margin-left: 12px;
+            margin-top: 12px;
+            font-weight: bold;
+        }
+        ul li:nth-child(3) h3{
+            color:rgb(101,101,101);
+            margin-left: 12px;
+            letter-spacing: 2px;
+            font-size: 22px;
+        }
+        ul li:nth-child(4) #spa5{
+            display: block;
+            width: 433px;
+            height: 97px;
+            margin: 20px auto 0 auto;
+            background: url(./image/btn01.png) 0 0 no-repeat;
+            line-height: 97px;
+            font-size: 36px;
+            font-style: italic;
+            text-align: center;
+            color:white;
+        }
+        ul li:nth-child(5) #bottom{
+            width: 640px;
+            height: 100px;
+            font-size: 24px;
+            line-height: 100px;
+            position: relative;
+        }
+        ul li:nth-child(5) #bottom #spa6{
+            width: 220px;
+            height: 100px;
+            float: left;
+            margin-left: 60px;
+        }
+        ul li:nth-child(5) #bottom #spa7{
+            margin-top: 20px;
+            width: 68px;
+            height: 68px;
+            float: left;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <ul id="list">
+        <li>
+            <span id="spa1">恭喜您，启辰车模已经属于您了！</span>
+        </li>
+
+        <li>
+            <div>
+                <span id="spa2">请保持在本页面，凭页面代码到展台领取礼品！</span>
+                <span id="spa3">QC001</span>
+                <span id="spa4"></span>
+            </div>
+        </li>
+
+        <li>
+            <h2>不够过瘾？</h2>
+            <h3>那么请留下您的联系方式，就有机会抽取启辰启辰R30<br/>晨风一年使用权大奖哦！</h3>
+        
+        </li>
+
+        <li>
+            <span id="spa5">启辰开回家</span>
+        </li>
+
+        <li>
+            <div id="bottom">
+                <span id="spa6">
+                    分享好友积攒人品：
+                </span>
+                <span id="spa7"><a href=""><img src="./image/weixin.png" alt="微信" title="微信"></a></span>
+                <span id="spa7"><a href=""><img src="./image/xlwb.png" alt="新浪微博" title="新浪微博"></a></span>
+                <span id="spa7"><a href=""><img src="./image/txwb.png" alt="腾讯微博" title="腾讯微博"></a></span>
+            </div>
+        </li>
+    </ul>
+</body>
+<script>
+   function resetPage(){
+            // 获取设备的宽度
+            var deviceWidth = document.documentElement.clientWidth;
+            // 设备的宽度/设计图的宽度
+            var scale = deviceWidth/640;
+            // 对body进行缩放
+            document.body.style.zoom = scale;
+    }
+    resetPage();
+    window.onresize = function(){
+        resetPage();
+    } 
+</script>
+</html>

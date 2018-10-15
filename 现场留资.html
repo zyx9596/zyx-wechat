@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>现场留资</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        #outer{
+            width: 640px;
+            height: 1008px;
+            margin: 0 auto;
+            background: url(./image/bg01.jpg) 0 0 no-repeat;
+            position: relative;
+        }
+        ul{
+            display:block;
+        }
+        ul li:nth-child(1){
+            float: left;
+            margin-top:46px; 
+            width: 640px;
+            height: 76px;
+            background: url(./image/qckhj.png) 150px 0 no-repeat;
+        }
+        ul li:nth-child(2){
+            width:600px;
+            display: block;
+            color:rgb(101,101,101);
+            margin: 0 auto;
+            font-size: 26px;
+            text-indent:20px;
+            font-weight: bold;
+            margin-top: 20px;
+            /* letter-spacing: 2px; */
+            float: left;
+        }
+        ul li:nth-child(3) #spa1{
+            width:600px;
+            height: 87px;
+            display: block;
+            margin: 0 auto;
+            background: url(./image/shuru1.jpg)32px 20px no-repeat;
+            float: left;
+        }
+        ul li:nth-child(3) #spa1 input{
+            height: 64px;
+            width: 470px;
+            margin-top: 20px;
+            margin-left: 130px;
+            border:none;
+            font-size: 26px;
+        }
+        ul li:nth-child(4) #spa2{
+            width:600px;
+            height: 87px;
+            display: block;
+            margin: 0 auto;
+            background: url(./image/shuru2.jpg)32px 20px no-repeat;
+            float: left;
+            position: relative;
+        }
+        ul li:nth-child(4) #spa2 input{
+            height: 64px;
+            width: 470px;
+            margin-top: 20px;
+            margin-left: 130px;
+            border:none;
+            font-size: 26px;
+        }
+        ul li:nth-child(5) #spa3{
+            display: block;
+            width: 433px;
+            height: 97px;
+            position: relative;
+            top:20px;
+            margin: 0 auto;
+            background: url(./image/btn01.png) 0 0 no-repeat;
+            line-height: 97px;
+            font-size: 36px;
+            font-style: italic;
+            text-align: center;
+            color:white;
+            clear: left;
+            /* float: left; */
+        }
+        ul li:nth-child(6){
+            width: 640px;
+            height: 50px;
+            margin: 20px auto;
+            text-align: center;
+            font-size: 40px;
+            font-style: italic;
+        }
+        ul li:nth-child(6) a{
+            color:rgb(4,56,153);
+            font-weight: bold;
+        }
+        ul li:nth-child(7) #bottom{
+            width: 640px;
+            height: 100px;
+            font-size: 24px;
+            line-height: 100px;
+            position: relative;
+        }
+        ul li:nth-child(7) #bottom #spa4{
+            width: 220px;
+            height: 100px;
+            float: left;
+            margin-left: 60px;
+        }
+        ul li:nth-child(7) #bottom #spa5{
+            margin-top: 20px;
+            width: 68px;
+            height: 68px;
+            float: left;
+            margin-left: 30px;
+        }
+        #op{
+            width:640px;
+            height: 1008px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.4);
+            display: none;
+        }
+        #op #con{
+            width: 598px;
+            height: 400px;
+            background: white;
+            margin-left: 20px;
+            border:5px solid rgb(1, 40, 111);
+            border-radius:20px;
+            float: left;
+            margin-top: 200px;
+            text-align: center;
+            font-size: 36px;
+            font-family: "微软雅黑";
+            font-weight: bolder;
+        }
+        #op #con #sub{
+            display: block;
+            margin: 40px auto;
+            letter-spacing: 4px;
+            color: rgb(1, 40, 111);
+        }
+        #op #con pre{
+            color:rgb(101,101,101);
+            text-align: left;
+            display: block;
+            margin-left: 30px;
+            margin-top: 20px;
+        }
+        #op #con #spa6{
+            display: block;
+            width: 433px;
+            height: 97px;
+            margin: 20px auto 0 auto;
+            background: url(./image/btn01.png) 0 0 no-repeat;
+            line-height: 97px;
+            font-size: 36px;
+            font-style: italic;
+            text-align: center;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <div id="outer">
+        <ul id="list">
+            <li></li>
+            <li>
+                <pre>考验人品的时候到了，只要留下您的姓名和联系方式</pre><pre>就有机会抽取启辰R30、启辰晨风一年使用权大奖。</pre>
+            </li>
+            <li>
+                <span id="spa1">
+                    <input type="text" name="user" placeholder="请输入姓名">
+                </span>
+            </li>
+            <li>
+                <span id="spa2">
+                    <input type="text" name="user" placeholder="请输入手机号码">
+                </span>
+            </li>
+            <li>
+                <span id="spa3">提交</span>
+            </li>
+            <li><a href="活动规则.html">活动规则</a></li>
+            <li>
+                <div id="bottom">
+                        <span id="spa4">
+                            分享好友积攒人品：
+                        </span>
+                        <span id="spa5"><a href=""><img src="./image/weixin.png" alt="微信" title="微信"></a></span>
+                        <span id="spa5"><a href=""><img src="./image/xlwb.png" alt="新浪微博" title="新浪微博"></a></span>
+                        <span id="spa5"><a href=""><img src="./image/txwb.png" alt="腾讯微博" title="腾讯微博"></a></span>
+                    </div>
+            </li>
+        </ul>
+        <div id="op">
+            <div id="con">
+                <span id="sub">提交成功！</span>
+                <p>
+                    <pre>说好的16:00现场抽奖，启辰展</pre><pre>台与您不见不散！</pre>
+                </p>
+                <span id="spa6">不见不散</span>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    var list = document.getElementById('list');
+    // console.log(typeof list);
+    var lis = list.children;
+    // console.log(lis);
+    var op = document.getElementById('op');
+    // console.log(typeof op);
+    var sub = document.getElementById('sub');
+    // console.log(typeof sub);
+    var spa3 = document.getElementById('spa3');
+    var spa6 = document.getElementById('spa6');
+    for(var i = 0;i<lis.length;i++){
+        spa3.onclick = function(){
+            op.style.display = 'block';
+        }
+    }
+    spa6.onclick = function(){
+        op.style.display = 'none';
+    }
+
+    // 移动端兼容处理
+    function resetPage(){
+            // 获取设备的宽度
+            var deviceWidth = document.documentElement.clientWidth;
+            // 设备的宽度/设计图的宽度
+            var scale = deviceWidth/640;
+            // 对body进行缩放
+            document.body.style.zoom = scale;
+    }
+    resetPage();
+    window.onresize = function(){
+        resetPage();
+    }
+</script>
+</html>

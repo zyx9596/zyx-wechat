@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>活动说明</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style:none;
+        }
+       #box{
+            width: 640px;
+            height: 1008px;
+            margin: 0 auto;
+            position: relative;
+            background: url(./image/bg01.jpg) 0 0 no-repeat;
+            
+        }
+       #box #inner{
+           width: 640px;
+           height: 1008px;
+           position: absolute;
+           left: 0px;
+           top:0px;
+           background: rgba(0,0,0,0.3);
+       }
+       ul li{
+           width: 640px;
+           height: 270px;
+           background: url(./image/bg02.jpg) 0 0 no-repeat;
+       }
+       #inner #box{
+        margin: 0 auto;
+        width: 640px;
+        height: 605px;
+        position: relative;
+        margin-top: 110px;
+        background: transparent;
+       }
+       #inner #box #con{
+        float: left;
+        width: 598px;
+        height: 600px;
+        margin-left: 20px;
+        border:5px solid rgb(1, 40, 111);
+        border-radius: 20px;
+        background: white;
+       }
+       #inner h2{
+            color: rgb(4,56,153);
+            margin-top: 30px;
+            margin-left: 30px;
+        }
+        #inner #box #con pre{
+            color:rgb(101,101,101);
+            font-size: 20px;
+            font-family: '微软雅黑';
+            font-weight: bold;
+            word-spacing: 4px;
+            letter-spacing: 4px;
+            margin-top: 5px;
+            margin-left: 30px;
+        }
+        #inner #box #choujiang{
+            width: 433px;
+            height: 98px;
+            overflow: hidden;
+            /* background: red; */
+            background: url(./image/btn01.png) 0 0 no-repeat;
+            margin: 20px auto;
+            font-size: 40px;
+            line-height: 98px;
+            color:white;
+            text-align: center;
+            font-style: italic;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+   <div id="box">
+       <div id="inner">
+           <div id="box">
+               <div id="con">
+                    <h2>活动说明：</h2>
+                    <pre>&nbsp;&nbsp;&nbsp;&nbsp;抽奖活动哪家强，东风日产看启辰，广州车</pre><pre>展期间，启辰君为您准备了多彩铅笔套装、购车</pre><pre>代金券、晨风车模、手机话费等精美礼品；</pre>
+                    <pre>&nbsp;&nbsp;&nbsp;&nbsp;车展现场参与活动的用户百分之百中奖，留下</pre><pre>联系方式更有机会赢取启辰R30、启辰晨风一年</pre><pre>使用权大奖；场外用户参与活动也有机会获得</pre><pre>话费充值大奖。</pre>
+                    <pre>&nbsp;&nbsp;&nbsp;&nbsp;心动了吗？那就马上行动吧！</pre>
+                    <pre>&nbsp;&nbsp;&nbsp;&nbsp;参与车展现场抽奖活动，中奖礼品只限当天</pre><pre>在启辰展台现场兑奖，过时不候哦，详情请咨询</pre><pre>启辰展台工作人员。</pre>
+                    <div id="choujiang">马上抽奖</div>
+               </div>
+           </div>
+       </div>
+       <ul>
+           <li></li>
+       </ul>
+   </div>
+</body>
+<script>
+    var choujiang = document.getElementById('choujiang');
+     function resetPage(){
+            // 获取设备的宽度
+            var deviceWidth = document.documentElement.clientWidth;
+            // 设备的宽度/设计图的宽度
+            var scale = deviceWidth/640;
+            // 对body进行缩放
+            document.body.style.zoom = scale;
+    }
+    resetPage();
+    window.onresize = function(){
+        resetPage();
+    }
+    choujiang.onclick = function(){
+        window.location.href = '抽奖.html';
+    }
+</script>
+</html>

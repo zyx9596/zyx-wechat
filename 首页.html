@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style:none;
+        }
+       ul{
+            width: 640px;
+            height: 1008px;
+            margin: 0 auto;
+            background: url(./image/bg01.jpg) 0 0 no-repeat;
+            position: relative;
+            
+        }
+        ul li:nth-child(1){
+            height: 270px;
+            width: 640px;
+            background: url(./image/bg02.jpg) 0 0 no-repeat;
+        }
+        ul li:nth-child(2){
+            height: 218px;
+            width: 640px;
+            background: url(./image/msyl.png) 60px 20px no-repeat;
+        }
+        ul li:nth-child(3){
+            text-align: center;
+            font-style: italic;
+            line-height: 97px;
+            margin: 20px auto;
+            height: 97px;
+            width: 433px;
+            color:white;
+            font-family: '微软雅黑';
+            font-weight: bold;
+            font-size: 40px;
+            background: url(./image/btn01.png)  0 0 no-repeat;
+        }
+        ul li:nth-child(4){
+            text-align: center;
+            font-style: italic;
+            line-height: 97px;
+            margin: 20px auto;
+            height: 97px;
+            width: 433px;
+            color:white;
+            font-family: '微软雅黑';
+            font-weight: bold;
+            font-size: 40px;
+            background: url(./image/btn01.png)  0 0 no-repeat;
+        }
+        ul li:nth-child(5){
+            width: 640px;
+            height: 50px;
+            margin: 20px auto;
+            text-align: center;
+            font-size: 40px;
+            font-style: italic;
+        }
+        ul li:nth-child(5) a{
+            color:rgb(4,56,153);
+            font-weight: bold;
+        }
+        #box{
+            width: 640px;
+            height: 1008px;
+            position: absolute;
+            left:0px;
+            top:0px;
+            background: rgba(0, 0, 0,0.4);
+            display: none;
+        }
+        #box #inner{
+            width: 598px;
+            height: 400px;
+            background: white;
+            margin-left: 20px;
+            border:5px solid rgb(1, 40, 111);
+            border-radius:20px;
+            float: left;
+            margin-top: 240px;
+            text-align: center;
+            color: rgb(1, 40, 111);
+            font-size: 36px;
+            font-family: "微软雅黑";
+            font-weight: bolder;
+            
+        }
+        #box #inner p{
+            margin-top: 15px;
+        }
+        #box #inner #OK,#NO{
+            width: 433px;
+            height: 97px;
+            margin: 10px auto;
+            background: url(./image/btn01.png) 0 0 no-repeat;
+            color:white;
+            line-height: 97px;
+            font-size: 40px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <ul id="list">
+        <li></li>
+        <li></li>
+        <li>我在车展&nbsp;马上拿奖</li>
+        <li>不在现场&nbsp;试试手气</li>
+        <li><a href="活动说明.html">活动说明</a></li>
+        <div id="box">
+            <div id="inner">
+                <p>
+                    <pre>请确认你是否在车展现场</pre>
+                </p>
+                <p>
+                    <pre>以免无法兑奖，</pre>
+                </p>
+                <p>
+                    <pre>不在车展现场还可抽取话费哦！</pre>
+                </p>
+                <div id="OK">确定</div>
+                <div id="NO">重新选择</div>
+            </div>
+        </div>
+    </ul>
+</body>
+<script>
+    var box = document.getElementById('box');
+    var list = document.getElementById('list');
+    var lis = list.children;
+    var OK= document.getElementById('OK');
+    var NO = document.getElementById('NO');
+    var arr = ['场外中奖1','场外中奖2','场外中奖3'];
+    var x = Math.floor(Math.random()*3);
+    for(var i = 0;i<lis.length;i++){
+        lis[2].onclick = function(){
+            box.style.display = 'block';
+        }
+        lis[3].onclick = function(){
+            window.location.href = arr[x]+'.html';
+        }
+    }
+OK.onclick = function(){
+    window.location.href = '抽奖.html';
+}
+NO.onclick = function(){
+    window.location.href = '首页.html';
+}
+
+
+    function resetPage(){
+            // 获取设备的宽度
+            var deviceWidth = document.documentElement.clientWidth;
+            // 设备的宽度/设计图的宽度
+            var scale = deviceWidth/640;
+            // 对body进行缩放
+            document.body.style.zoom = scale;
+    }
+    resetPage();
+    window.onresize = function(){
+        resetPage();
+    }
+</script>
+</html>
